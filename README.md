@@ -18,10 +18,10 @@ A reactjs app repository
 - Faster transitions => feels more like a native app
 
 Non-SPA
-- TIB Performance Management Dashboard
+- TripAdvisor( https://www.tripadvisor.com )
 - Slow / clunky
 SPA
-- React Dashboard
+- React Dashboard( https://react-material.fusetheme.com/dashboards/project )
 - Fast / native-like
 
 ## License
