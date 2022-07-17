@@ -42,5 +42,10 @@ Imperative
 - Remove broccoli from fridge
 - Serve broccoli
 
+## To start with
+```js
+npx create-react-app react-app
+```
+
 ## License
 Apache 2.0
