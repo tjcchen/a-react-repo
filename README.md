@@ -24,5 +24,23 @@ SPA
 - React Dashboard( https://react-material.fusetheme.com/dashboards/project )
 - Fast / native-like
 
+## Components
+- Reusable
+- Maintainable( refactoring, bug fixes, testing )
+
+## React = Declarative
+Declarative vs Imperative
+- Telling what to do instead of how to do it
+
+Declarative
+- I want dinner with broccoli
+React: here's your broccoli
+
+Imperative
+- Go to the kitchen
+- Open fridge
+- Remove broccoli from fridge
+- Serve broccoli
+
 ## License
 Apache 2.0
