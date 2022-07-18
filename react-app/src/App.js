@@ -1,9 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   const user = {
-    name: 'Andy',
+    name: "Andy",
     age: 28,
   };
 
@@ -12,13 +12,13 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <p>A ReactJS App</p>
           <p>
-            A ReactJS App
+            Hi my name is {user.name}, and I am {user.age} years old
           </p>
-          <p>Hi my name is {user.name}, and I am {user.age} years old</p>
         </header>
       </div>
-      <div>Hello</div>
+      <div>Hello ReactJS App</div>
     </>
   );
 }
