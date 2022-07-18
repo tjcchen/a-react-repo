@@ -47,5 +47,9 @@ Imperative
 npx create-react-app react-app
 ```
 
+## JSX
+- JavaScript XML
+- templating-language
+
 ## License
 Apache 2.0
