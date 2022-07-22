@@ -1,25 +1,14 @@
-import logo from "./logo.svg";
-import "./App.css";
-
 function App() {
-  const user = {
-    name: "Andy",
-    age: 28,
-  };
-
   return (
-    <>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>A ReactJS App</p>
-          <p>
-            Hi my name is {user.name}, and I am {user.age} years old
-          </p>
-        </header>
-      </div>
-      <div>Hello ReactJS App</div>
-    </>
+    <div>
+      <img
+        style={{ width: '16rem' }}
+        src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=830&q=80"
+        alt="animal"
+      />
+      <p>Beau chat</p>
+      <a href="/cats">More infomation</a>
+    </div>
   );
 }
 
