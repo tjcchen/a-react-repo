@@ -4,6 +4,7 @@ function App() {
   return (
     <>
       <Card />
+      <hr/>
       <Card />
     </>
   );
