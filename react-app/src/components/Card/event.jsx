@@ -1,3 +1,9 @@
+/**
+ * User Events
+ * - onClick
+ * - onChange
+ */
+
 export default function Event() {
   const print = () => {
     console.log("print into to the console");
