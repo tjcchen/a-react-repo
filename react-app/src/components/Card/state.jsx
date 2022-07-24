@@ -19,6 +19,7 @@ export default function Counter() {
    * This function only increments 2 to counter
    */
   const onClick = () => {
+    // set state directly, not caring about its previous state
     setCount(count + 10);
     // ...
     setCount(count + 2);
