@@ -13,6 +13,7 @@ import { useState } from "react";
 
 export default function Counter() {
   const [count, setCount] = useState(0);
+  const [toggle, setToggle] = useState(false);
 
   /**
    * This function only increments 2 to counter
@@ -34,11 +35,17 @@ export default function Counter() {
 
   return (
     <>
+      {/* Counter */}
       <button onClick={onClick}>Increment Counter</button>
       <button onClick={onClickWithPrevState}>
         Increment Counter with PrevState
       </button>
       <p>{count}</p>
+      {/* Toggle */}
+      <button onClick={() => setToggle((prevState) => !prevState)}>
+        Reverse Toggle
+      </button>
+      <p>{toggle ? "ON" : "OFF"}</p>
     </>
   );
 }
