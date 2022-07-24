@@ -14,9 +14,30 @@ import { useState } from "react";
 export default function Counter() {
   const [count, setCount] = useState(0);
 
+  /**
+   * This function only increments 2 to counter
+   */
+  const onClick = () => {
+    setCount(count + 10);
+    // ...
+    setCount(count + 2);
+  };
+
+  /**
+   * This function works fine
+   */
+  const onClickWithPrevState = () => {
+    setCount((prevState) => prevState + 10);
+    // ...
+    setCount((prevState) => prevState + 2);
+  };
+
   return (
     <>
-      <button onClick={() => setCount(count + 1)}>Increment Counter</button>
+      <button onClick={onClick}>Increment Counter</button>
+      <button onClick={onClickWithPrevState}>
+        Increment Counter with PrevState
+      </button>
       <p>{count}</p>
     </>
   );
