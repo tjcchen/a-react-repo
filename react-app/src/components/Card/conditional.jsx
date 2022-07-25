@@ -5,6 +5,7 @@
  * - &&, watch out with .map
  * - Enum
  */
+import "./conditional.css";
 
 export default function Conditional() {
   const user = {
@@ -16,7 +17,11 @@ export default function Conditional() {
   return (
     <>
       <h1>App</h1>
-      <p>Welcome, {isAuthenticated ? name : "please log in"}</p>
+      <p
+        className={isAuthenticated ? "welcomeTextAuthenticated" : "welcomeText"}
+      >
+        Welcome, {isAuthenticated ? name : "please log in"}
+      </p>
     </>
   );
 }
