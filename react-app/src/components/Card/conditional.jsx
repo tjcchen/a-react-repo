@@ -9,7 +9,7 @@ import "./conditional.css";
 
 export default function Conditional() {
   const user = {
-    // admin, shopManager, customer, guest
+    // admin, manager, customer, guest
     role: 'customer',
     name: "Andy",
     isAuthenticated: true,
