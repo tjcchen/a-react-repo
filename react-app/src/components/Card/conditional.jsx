@@ -8,9 +8,16 @@
 import "./conditional.css";
 
 export default function Conditional() {
+  const welcomeText = {
+    admin: "Hi admin",
+    manager: "Hi manager",
+    customer: "Welcome customer",
+    guest: "Welcome guest",
+  };
+
   const user = {
     // admin, manager, customer, guest
-    role: "customer",
+    role: "manager",
     name: "Andy",
     isAuthenticated: true,
   };
@@ -26,11 +33,12 @@ export default function Conditional() {
       </p>
       <p>
         {role === "admin"
-          ? "Hi Admin"
+          ? welcomeText.admin
           : role === "manager"
-          ? "Hi Manager"
-          : role === "customer" && "welcome customer"}
+          ? welcomeText.manager
+          : role === "customer" && welcomeText.customer}
       </p>
+      <p>{welcomeText[role]}</p>
       {/* && equals to if */}
       {!isAuthenticated && <button type="button">Log in</button>}
     </>
