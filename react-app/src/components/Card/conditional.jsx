@@ -10,7 +10,7 @@ import "./conditional.css";
 export default function Conditional() {
   const user = {
     // admin, manager, customer, guest
-    role: 'customer',
+    role: "customer",
     name: "Andy",
     isAuthenticated: true,
   };
@@ -23,6 +23,13 @@ export default function Conditional() {
         className={isAuthenticated ? "welcomeTextAuthenticated" : "welcomeText"}
       >
         Welcome, {isAuthenticated ? name : "please log in"}
+      </p>
+      <p>
+        {role === "admin"
+          ? "Hi Admin"
+          : role === "manager"
+          ? "Hi Manager"
+          : role === "customer" && "welcome customer"}
       </p>
       {/* && equals to if */}
       {!isAuthenticated && <button type="button">Log in</button>}
