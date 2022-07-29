@@ -21,6 +21,13 @@ export default function Fetching() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
+  /**
+   * [Explain] useEffect hook will be invoked whenever there the component is rendered,
+   * if we don't pass an empty array as second parameter, this hook will be invoking all the time.
+   * 
+   * Note: an empty array means we only do that on the first time
+   * 
+   */
   useEffect(() => {
     const fetchPosts = async () => {
       try {
