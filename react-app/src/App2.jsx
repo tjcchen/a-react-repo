@@ -2,10 +2,12 @@
  * Entry of App2
  */
 
+import Fetching from "./components/Card/fetching";
+
 function App() {
   return (
     <>
-      <p>This is App2 entry</p>
+      <Fetching />
     </>
   );
 }
