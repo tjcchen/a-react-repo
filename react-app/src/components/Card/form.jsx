@@ -5,16 +5,23 @@
  * - onChange
  * - onSubmit
  *   e.preventDefault
+ *
+ * Info
+ * - guide: https://jsonplaceholder.typicode.com/guide/
  */
 
+import axios from "axios";
 import { useState } from "react";
 
 const defaultFormData = {
   title: "",
   body: "",
+  userId: 1,
 };
 
 export default function Form() {
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
   const [formData, setFormData] = useState(defaultFormData);
   const { title, body } = formData;
 
@@ -25,9 +32,21 @@ export default function Form() {
     }));
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+
+    try {
+      const response = await axios.post(
+        "https://jsonplaceholder.typicode.com/posts",
+        formData
+      );
+      console.log(response);
+      setSuccess(true);
+    } catch (ex) {
+      console.log("error", ex);
+      setError(true);
+    }
+
     setFormData(defaultFormData);
   };
 
@@ -46,6 +65,9 @@ export default function Form() {
         <br />
         <button type="submit">Upload post</button>
       </form>
+
+      {error && <p>Ooops, could not upload post...</p>}
+      {success && <p>Post upload has succeeded</p>}
     </>
   );
 }
