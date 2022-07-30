@@ -11,6 +11,14 @@
  * - React Query( https://github.com/TanStack/query )
  * - Axios( https://github.com/axios/axios )
  * - Mock API( https://jsonplaceholder.typicode.com/ )
+ * 
+ * Data Fetching - Set Data
+ * - POST   => new
+ * - PUT    => change(overwrite)
+ * - PATCH  => partial change
+ * - DELETE
+ * 
+ * - File upload
  */
 
 import axios from "axios";
