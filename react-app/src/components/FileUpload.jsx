@@ -10,17 +10,10 @@ export default function FileUpload() {
     e.preventDefault();
 
     const formData = new FormData();
-    let response = null;
     formData.append('file', file);
 
-    try {
-      response = await axios.post('http://www.tjcchen.cn', formData);
-      console.log(JSON.stringify(formData));
-      console.log(response);
-    } catch (ex) {
-      console.log(JSON.stringify(formData));
-      console.log(response);
-    }
+    const response = await axios.post('http://www.tjcchen.cn', formData);
+    console.log(response);
   };
 
   return (
