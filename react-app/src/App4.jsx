@@ -13,7 +13,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate
+  // Navigate
 } from 'react-router-dom';
 import AppHeader from './router/AppHeader';
 import Login from './router/Login';
@@ -25,10 +25,12 @@ export default function App() {
       <Router>
         <AppHeader />
         <Routes>
-          <Route path="/login" component={Login} />
-          <Route path="/dashboard" component={Dashboard} />
-          <Navigate to="/login" />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          {/* <Navigate to="/login" /> */}
         </Routes>
+        <p>React Router Hooks</p>
       </Router>
     </>
   );
