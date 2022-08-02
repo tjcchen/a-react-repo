@@ -1,8 +1,7 @@
-import React from 'react';
+import React from "react";
 
 export default function Dashboard() {
-
-  console.log('Dashboard');
+  console.log("Dashboard");
 
   return (
     <>
