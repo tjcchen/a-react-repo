@@ -11,11 +11,17 @@ export default function Dashboard() {
   return (
     <>
       <p>Dashboard</p>
-      <button onClick={() => navigate("/login", { replace: false, state: data })}>
+      <button
+        onClick={() => navigate("/login", { replace: false, state: data })}
+      >
         Go to login
       </button>
 
       <Link to="/login">Go to login with Link</Link>
+
+      <p>
+        <button onClick={() => navigate("/tweet/" + data)}>Go to Tweer</button>
+      </p>
     </>
   );
 }
