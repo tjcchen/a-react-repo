@@ -11,6 +11,7 @@ export default function Login() {
     <>
       <p>Login</p>
       <p>{location.state}</p>
+      <button onClick={() => navigate(-1)}>Go back</button>
     </>
   );
 }
