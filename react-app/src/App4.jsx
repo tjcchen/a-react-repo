@@ -1,10 +1,10 @@
 /**
  * React Router Hooks
- * - useHistory
- *   history.push()
- *   with and without state
- *   vs <link />
- * - history.goBack()
+ * - useHistory - [useNavigate]
+ *   history.push() - navigate('url', params)
+ *   with and without state - [PASS DATA WITH NAVIGATE AND HISTORY]
+ *   vs <link /> [RECOMMENDED]
+ * - history.goBack() => navigate(-1)
  * - useParams
  *   Destructure from URL
  */
