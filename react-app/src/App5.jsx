@@ -27,6 +27,7 @@
  */
 
 import { useState } from "react";
+import CalculationOverview from "./state/CalculationOverview";
 import InputNumber from "./state/InputNumber";
 import MultipliedByTwo from "./state/MultipliedByTwo";
 
@@ -37,7 +38,9 @@ export default function App() {
     <>
       <h1>Multiplied by two App</h1>
       <InputNumber setInputValue={setInputValue} />
-      <MultipliedByTwo inputValue={inputValue} />
+      {/* <MultipliedByTwo inputValue={inputValue} /> */}
+
+      <CalculationOverview inputValue={inputValue} />
     </>
   );
 }

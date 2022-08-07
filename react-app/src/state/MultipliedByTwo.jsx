@@ -6,7 +6,7 @@
  * - Lifting state up
  * - Prop Drilling
  * 
- * Passing a props from parent component
+ * Passing a props from parent component, we actually have all the data stored in props
  *
  */
 
