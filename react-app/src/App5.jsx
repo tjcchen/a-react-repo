@@ -17,7 +17,7 @@
  * Server Cache
  * - React query, axios
  * 
- * Only use a state management library if you really need to, like:
+ * Only use a state management library if you really need to( 95% case you dont need ), like:
  * - Redux, Recoil, Jotai, Mobx, Zustand etc.
  * Redux: https://redux.js.org/
  * Recoil: https://github.com/facebookexperimental/Recoil

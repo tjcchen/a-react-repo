@@ -20,7 +20,7 @@ export default function Dashboard() {
       <Link to="/login">Go to login with Link</Link>
 
       <p>
-        <button onClick={() => navigate("/tweet/" + data)}>Go to Tweer</button>
+        <button onClick={() => navigate("/tweet/" + data)}>Go to Tweet</button>
       </p>
     </>
   );
