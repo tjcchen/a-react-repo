@@ -5,7 +5,8 @@ import "./index.css";
 // import App from './App2';
 // import App from './App3';
 // import App from './App4';
-import App from './App5';
+// import App from './App5';
+import App from "./App6";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -16,6 +17,4 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //   </React.StrictMode>
 // );
 
-root.render(
-  <App />
-);
+root.render(<App />);

@@ -24,12 +24,21 @@
  * Jotai: https://github.com/pmndrs/jotai
  * Mobx: https://github.com/mobxjs/mobx
  * Zustand: https://github.com/pmndrs/zustand
+ *
+ * Component Composition
+ * - Composing components together
+ * - Way to prevent prop drilling
+ *
+ * - Shortcomings( can be hard to use ):
+ *   a) You need to nest a lot of components( wrapper hell )
+ *   b) Data needs to be accessible by many components at all different nesting levels
  */
 
 import { useState } from "react";
 import CalculationOverview from "./state/CalculationOverview";
 import InputNumber from "./state/InputNumber";
 import MultipliedByTwo from "./state/MultipliedByTwo";
+import MultipliedCalculations from "./state/MultipliedCalculations";
 
 export default function App() {
   const [inputValue, setInputValue] = useState(0);
@@ -39,8 +48,15 @@ export default function App() {
       <h1>Multiplied by two App</h1>
       <InputNumber setInputValue={setInputValue} />
       {/* <MultipliedByTwo inputValue={inputValue} /> */}
+      {/* <CalculationOverview inputValue={inputValue} /> */}
 
-      <CalculationOverview inputValue={inputValue} />
+      {/* Component Composition */}
+      {/* Replace props drilling with children */}
+      <CalculationOverview>
+        <MultipliedCalculations>
+          <MultipliedByTwo inputValue={inputValue} />
+        </MultipliedCalculations>
+      </CalculationOverview>
     </>
   );
 }
