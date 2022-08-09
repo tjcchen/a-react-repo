@@ -1,21 +1,15 @@
 import React from "react";
-// import MultipliedByThree from "./MultipliedByThree";
+import MultipliedByThree from "./MultipliedByThree";
 // import MultipliedByTwo from "./MultipliedByTwo";
 
-export default function MultipliedCalculations({ children }) {
-
-  console.log('children: ');
-  console.log(children);
-
+export default function MultipliedCalculations({ inputValue = 0 }) {
   return (
     <>
       {/* Multiplied by Two */}
       {/* <MultipliedByTwo inputValue={inputValue} /> */}
 
       {/* Multiplied by Three */}
-      {/* <MultipliedByThree inputValue={inputValue} /> */}
-
-      {children}
+      <MultipliedByThree inputValue={inputValue} />
     </>
   );
 }
