@@ -11,23 +11,23 @@ const initialState = {
 };
 
 const reducer = (state, action) => {
-  switch (action.type) {
+  const { type, payload } = action;
+
+  switch (type) {
     case "SET_INPUT_VALUE":
       return {
         ...state,
-        inputValue: action.payload,
-      };
-    case "SET_INPUT_VALUE_TO_100":
-      return {
-        ...state,
-        inputValue: 100,
+        inputValue: payload,
       };
     default:
       return state;
   }
 };
 
-const InputValueContext = createContext({ state: initialState, dispatch: () => {} });
+const InputValueContext = createContext({
+  state: initialState,
+  dispatch: () => {},
+});
 
 function InputValueProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, initialState);

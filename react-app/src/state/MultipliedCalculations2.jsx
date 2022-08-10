@@ -1,5 +1,5 @@
 import React from "react";
-import MultipliedByThree from "./MultipliedByThree";
+import MultipliedByThree from "./MultipliedByThree2";
 // import MultipliedByTwo from "./MultipliedByTwo";
 
 export default function MultipliedCalculations() {
