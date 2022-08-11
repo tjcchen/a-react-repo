@@ -1,3 +1,17 @@
+/**
+ * Props vs Component Composition vs Context
+ * - By default use Props
+ * - If Prop drilling becomes a problem => use Component Composition
+ * - If Component Composition becomes a problem => use Context
+ * 
+ * Use cases for Context are limited
+ * - Auth / Locale(Language) / UI Theme / Analytics - providers
+ * - Context Problems
+ *   Re-render problems( can be fixed )
+ *   Reuse of components is harder
+ *   Added complexity
+ */
+
 import React, { useContext } from "react";
 import MultipliedCalculations from "./MultipliedCalculations2";
 import { InputValueContext } from "../context/InputValueContext";
