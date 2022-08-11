@@ -19,6 +19,11 @@ const reducer = (state, action) => {
         ...state,
         inputValue: payload,
       };
+    case "SET_INPUT_VALUE_TO_100":
+      return {
+        ...state,
+        inputValue: 100,
+      };
     default:
       return state;
   }
