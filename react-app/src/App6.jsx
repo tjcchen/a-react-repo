@@ -18,11 +18,9 @@ export default function App() {
 
       {/* InputValueProvider can share state among different nested children components */}
       <InputValueProvider>
-
         <InputNumber />
 
         <CalculationOverview />
-
       </InputValueProvider>
     </>
   );
