@@ -8,7 +8,9 @@ import "./index.css";
 // import App from './App5';
 // import App from "./App6";
 // import App from './App7';
-import App from './App8';
+import App from "./App8";
+import store from "./redux/store";
+import { Provider } from "react-redux";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -19,4 +21,12 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //   </React.StrictMode>
 // );
 
-root.render(<App />);
+// normal
+// root.render(<App />);
+
+// react-redux
+root.render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+);

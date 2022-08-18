@@ -11,20 +11,18 @@
  *   Get: useSelector()
  *   Set: useDispatch()
  */
-import { useState } from "react";
 import CalculationOverview from "./state/CalculationOverview3";
-import InputNumber from "./state/InputNumber";
+import InputNumber from "./state/InputNumber3";
 
 export default function App() {
-  const [inputValue, setInputValue] = useState(0);
 
   return (
     <>
       <h2>Multiplied by two App</h2>
 
-      <InputNumber setInputValue={setInputValue} />
+      <InputNumber />
 
-      <CalculationOverview inputValue={inputValue} />
+      <CalculationOverview />
     </>
   );
 }
