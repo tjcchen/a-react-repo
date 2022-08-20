@@ -10,6 +10,10 @@
  * - Use React-Redux hooks to get/set data
  *   Get: useSelector()
  *   Set: useDispatch()
+ * 
+ * Links
+ * Redux: https://redux.js.org/introduction/getting-started
+ * React-Redux: https://react-redux.js.org/tutorials/quick-start
  */
 import CalculationOverview from "./state/CalculationOverview3";
 import InputNumber from "./state/InputNumber3";
