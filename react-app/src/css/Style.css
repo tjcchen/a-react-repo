@@ -5,3 +5,9 @@
 .main {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .header {
+    color: red;
+  }
+}

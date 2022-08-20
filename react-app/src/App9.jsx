@@ -25,8 +25,16 @@
  * - Cons
  * 1) HTML / Dom tree becomes hard to read( inline styles )
  * 2) Code completion is not so good
+ * 
+ * ============================================
+ * Why should we use SCSS
+ * - Nested selector( Eg: media queries )
+ * 1) However do not deeply nest classes / elements => hard to maintain
+ * - Partials
+ * - Extending styles
  */
-import "./css/Style.css";
+// import "./css/Style.css";
+import "./scss/Style.scss";
 
 export default function App() {
   const bodyText = "This is my body text";
