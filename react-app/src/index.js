@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+// import store from "./redux/store";
+// import { Provider } from "react-redux";
 // import App from "./App";
 // import App from './App2';
 // import App from './App3';
@@ -8,9 +10,8 @@ import "./index.css";
 // import App from './App5';
 // import App from "./App6";
 // import App from './App7';
-import App from "./App8";
-import store from "./redux/store";
-import { Provider } from "react-redux";
+// import App from "./App8";
+import App from "./App9";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -22,11 +23,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // );
 
 // normal
-// root.render(<App />);
+root.render(<App />);
 
 // react-redux
-root.render(
-  <Provider store={store}>
-    <App />
-  </Provider>
-);
+// root.render(
+//   <Provider store={store}>
+//     <App />
+//   </Provider>
+// );
