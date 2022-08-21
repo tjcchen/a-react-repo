@@ -1,10 +1,18 @@
+/**
+ * CSS Modules
+ * - Comes with Create React App
+ * - Simply name files "[name].module.scss" instead of "[name].scss"
+ * - Prevents specificity problem
+ * 1) Unique "hash"
+ */
 import React from "react";
-import "../scss/Header.scss";
+// [IMPORTANT] using scoped scss
+import styles from "../scss/Header.module.scss";
 
 export default function Header({ headerText }) {
   return (
     <>
-      <header className="top-header">
+      <header className={styles.header}>
         <div>Header Component</div>
         <div>{headerText}</div>
       </header>

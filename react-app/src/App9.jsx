@@ -35,6 +35,7 @@
  */
 // import "./css/Style.css";
 import "./scss/Style.scss";
+import styles from "./scss/Body.module.scss";
 import Header from "./components/Header";
 
 export default function App() {
@@ -49,7 +50,7 @@ export default function App() {
       <h1 className="header">This is a header styling with className</h1>
 
       {/* Conditional Rendering */}
-      <div className={bodyText.length > 5 ? "main" : null}>{bodyText}</div>
+      <div className={bodyText.length > 5 ? styles.main : null}>{bodyText}</div>
 
       {/* Import a component */}
       <Header headerText={"I am the header text"} />
