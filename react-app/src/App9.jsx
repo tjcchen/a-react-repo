@@ -25,7 +25,7 @@
  * - Cons
  * 1) HTML / Dom tree becomes hard to read( inline styles )
  * 2) Code completion is not so good
- * 
+ *
  * ============================================
  * Why should we use SCSS
  * - Nested selector( Eg: media queries )
@@ -35,13 +35,14 @@
  */
 // import "./css/Style.css";
 import "./scss/Style.scss";
+import Header from "./components/Header";
 
 export default function App() {
   const bodyText = "This is my body text";
 
   return (
     <>
-      {/* Try your best not to use inline-styling */}
+      {/* [Warning] Try your best not to use inline-styling */}
       <p style={{ color: "red" }}>React styling relevant things</p>
 
       {/* Good Practice */}
@@ -49,6 +50,9 @@ export default function App() {
 
       {/* Conditional Rendering */}
       <div className={bodyText.length > 5 ? "main" : null}>{bodyText}</div>
+
+      {/* Import a component */}
+      <Header headerText={"I am the header text"} />
     </>
   );
 }
