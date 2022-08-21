@@ -1,0 +1,7 @@
+.top-header {
+  color: yellow;
+
+  @media (max-width: 768px) {
+    color: green;
+  }
+}
