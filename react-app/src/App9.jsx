@@ -52,6 +52,15 @@ export default function App() {
       {/* Conditional Rendering */}
       <div className={bodyText.length > 5 ? styles.main : null}>{bodyText}</div>
 
+      {/* Adding Multiple classNames */}
+      <p
+        className={`className1 className2 ${
+          bodyText.length > 30 ? "className3" : "className4"
+        }`}
+      >
+        ExtraText
+      </p>
+
       {/* Import a component */}
       <Header headerText={"I am the header text"} />
     </>
