@@ -17,12 +17,13 @@
  * 
  * - Try a CSS Reset(eg: meyer) / Normalize.css
  * 1) Opinionated yet effective for consistent styling across browsers
+ * Normalize.css: https://github.com/necolas/normalize.css
+ * Reset CSS: https://meyerweb.com/eric/tools/css/reset/
  * 
  * - Use CSS variables for colors
  * - Keep your CSS selectors short
  * 1) .thisClass
- * 2) .header .nav p .thatClass
- * 
+ * 2) .header .nav p .thatClass( do not use )
  */
 import styled from "styled-components";
 
