@@ -9,6 +9,20 @@
  * - Conditional styling (based on props)
  * - Extending styles
  * - Media Query / onHover
+ * 
+ * ======================================
+ * Styling recommendations
+ * - Prevent 'weird' styling decisions; keep it simple;
+ * 1) Abstractions and not-traditional decisions comes at a cost
+ * 
+ * - Try a CSS Reset(eg: meyer) / Normalize.css
+ * 1) Opinionated yet effective for consistent styling across browsers
+ * 
+ * - Use CSS variables for colors
+ * - Keep your CSS selectors short
+ * 1) .thisClass
+ * 2) .header .nav p .thatClass
+ * 
  */
 import styled from "styled-components";
 
