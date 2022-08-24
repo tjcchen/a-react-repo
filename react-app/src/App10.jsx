@@ -24,6 +24,10 @@
  * - Keep your CSS selectors short
  * 1) .thisClass
  * 2) .header .nav p .thatClass( do not use )
+ * 
+ * Analyse CSS：
+ * - cssstats.com
+ * - csslint.net
  */
 import styled from "styled-components";
 
