@@ -11,6 +11,16 @@
  * - Commit Phase: apply the changes (e.g. inserting / updating / removing DOM nodes)
  * 
  * Commiting = Fast, Rendering = can be slow
+ * 
+ * Solving wasted rerenders
+ * - State Changes
+ * 1) Colocation => keeping state as close as possible to where it's needed
+ * 1.1) Component composition
+ * 1.2) Proper usage of the Context API
+ * 
+ * - Memoication
+ * 1) To store (the result of a computed expression) so that it can be
+ *    subsequently retrieved without repeating the computation
  */
 export default function App() {
   return (
