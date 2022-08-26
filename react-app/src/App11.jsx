@@ -7,8 +7,8 @@
  * 
  * Rendering:
  * If we cause a component to (re)render, React works in 2 phases:
- * - Render: determining what changes need to be made (this is where the reconciliation / 'diff' algorithm comes in to play)
- * - Commit: apply the changes (e.g. inserting / updating / removing DOM nodes)
+ * - Render Phase: determining what changes need to be made (this is where the reconciliation / 'diff' algorithm comes in to play)
+ * - Commit Phase: apply the changes (e.g. inserting / updating / removing DOM nodes)
  * 
  * Commiting = Fast, Rendering = can be slow
  */
