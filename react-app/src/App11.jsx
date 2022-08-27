@@ -22,10 +22,13 @@
  * 1) To store (the result of a computed expression) so that it can be
  *    subsequently retrieved without repeating the computation
  */
+import Profiler from "./components/Profiler";
+
 export default function App() {
   return (
     <>
-      <p>Performance Intro</p>
+      <p>Performance Section</p>
+      <Profiler />
     </>
   );
 }
