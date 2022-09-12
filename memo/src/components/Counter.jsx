@@ -12,4 +12,14 @@ const Counter = ({ children, value }) => {
   );
 };
 
-export default React.memo(Counter);
+// Return true if passing nextProps to render would return
+// the same result as passing prevProps to render,
+// otherwise return false.
+// [Note] prevProps & nextProps containing all the props within a component
+const areEqual = (prevProps, nextProps) => {
+  console.dir(prevProps);
+  console.dir(nextProps);
+  return prevProps.value === nextProps.value;
+};
+
+export default React.memo(Counter, areEqual);
