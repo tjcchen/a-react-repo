@@ -19,12 +19,8 @@ function App() {
     <>
       <h3> React.memo vs useMemo vs useCallback </h3>
       <button onClick={increaseCounter1}>Increase counter 1</button>
-      <Counter value={count1}>
-        <p>Ref</p> Counter 1
-      </Counter>
-      <Counter value={count2}>
-        <p>Ref</p> Counter 2
-      </Counter>
+      <Counter value={count1}>Counter 1</Counter>
+      <Counter value={count2}>Counter 2</Counter>
     </>
   );
 }
