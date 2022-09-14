@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Counter from "./components/Counter";
+import Memo from "./components/Memo";
 
 function App() {
   const [count1, setCount1] = useState(0);
@@ -21,6 +22,8 @@ function App() {
       <button onClick={increaseCounter1}>Increase counter 1</button>
       <Counter value={count1}>Counter 1</Counter>
       <Counter value={count2}>Counter 2</Counter>
+      <hr/>
+      <Memo />
     </>
   );
 }
