@@ -17,8 +17,8 @@ const Counter = ({ children, value }) => {
 // otherwise return false.
 // [Note] prevProps & nextProps containing all the props within a component
 const areEqual = (prevProps, nextProps) => {
-  console.dir(prevProps);
-  console.dir(nextProps);
+  // console.dir(prevProps);
+  // console.dir(nextProps);
   return prevProps.value === nextProps.value;
 };
 
