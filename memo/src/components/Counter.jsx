@@ -22,4 +22,5 @@ const areEqual = (prevProps, nextProps) => {
   return prevProps.value === nextProps.value;
 };
 
-export default React.memo(Counter, areEqual);
+// export default React.memo(Counter, areEqual);
+export default React.memo(Counter);
