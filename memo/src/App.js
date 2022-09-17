@@ -26,6 +26,8 @@ function App() {
     setCount1((count1) => count1 + 1);
   }, []);
 
+  // The useCallback dependency is empty because we want to create these functions only once.
+  // In this way, the onClick props passed to the Counter component is always the same
   const increaseCounter4 = useCallback(() => {
     setCount2((count2) => count1 + 1);
   }, []);

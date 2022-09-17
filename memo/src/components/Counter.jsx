@@ -1,3 +1,9 @@
+/**
+ * 1. React.memo is similar to React.PureComponent except the fact that it is used for functional component
+ * while React.PureComponent is used only in class component
+ * 
+ * 2. React.useMemo returns a memoized value while React.useCallback return a memoized callback
+ */
 import React from "react";
 
 const Counter = ({ children, value, onClick }) => {
