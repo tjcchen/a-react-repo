@@ -1,11 +1,11 @@
 import React from "react";
 
-const Counter = ({ children, value }) => {
+const Counter = ({ children, value, onClick }) => {
   // children refer to inner content, including html tags
   console.log("Render: ", children);
   return (
     <>
-      <div>
+      <div onClick={onClick}>
         {children}: {value}
       </div>
     </>

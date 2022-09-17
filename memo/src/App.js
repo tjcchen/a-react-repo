@@ -17,16 +17,27 @@ function App() {
     setCount1((prevState) => prevState + 1);
   };
 
+  const increaseCounter2 = () => {
+    setCount1((count2) => count2 + 1);
+  };
+
   return (
     <>
       <h3> React.memo vs useMemo vs useCallback </h3>
-      <button onClick={increaseCounter1}>Increase counter 1</button>
+      {/* <button onClick={increaseCounter1}>Increase counter 1</button>
       <Counter value={count1}>Counter 1</Counter>
-      <Counter value={count2}>Counter 2</Counter>
+      <Counter value={count2}>Counter 2</Counter> */}
       <hr />
       <Memo />
       <hr />
       <UseMemoDemo msg={"hello, my friend!"} />
+      <hr />
+      <Counter value={count1} onClick={increaseCounter1}>
+        Counter 1
+      </Counter>
+      <Counter value={count2} onClick={increaseCounter2}>
+        Counter 2
+      </Counter>
     </>
   );
 }
