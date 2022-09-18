@@ -33,3 +33,9 @@ textarea {
   id="info"
 >
 ```
+
+Where to store global styles
+- 7-1 pattern
+link1: https://sass-guidelin.es/#the-7-1-pattern
+link2: https://gist.github.com/rveitch/84cea9650092119527bc
+
