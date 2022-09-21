@@ -1,3 +1,17 @@
 @import 'abstracts/variables';
 
+@import 'base/base';
+@import 'base/font';
+@import 'base/helper';
+@import 'base/typography';
+
+@import 'components/button';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/home';
+
+@import 'themes/default';
+
 @import 'vendors/normalize';
