@@ -1,5 +1,4 @@
-// Variable definition
-$text-color: rgb(34, 34, 34) !default;
+@import './scss/abstracts/variables';
 
 .App {
   text-align: center;
