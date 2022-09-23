@@ -69,3 +69,14 @@ $breakpoints: (
 /// @example scss - When using a CDN
 ///   $base-url: 'https://cdn.example.com/assets/';
 $base-url: '/assets/' !default;
+
+// The root style
+:root {
+  --primary: #00819e;
+  --primary-hover: #006800;
+  --primary-border: #005568;
+  --secondary-hover-border: rgba(0, 129, 158, 0.2);
+  --underline: #000000;
+  --title: #2c3038;
+  --white: white;
+}
