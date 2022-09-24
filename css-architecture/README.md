@@ -114,3 +114,14 @@ cosnt GlobalStyle = createGlobalStyle`
   <Navigation /> {/* example of other top-level stuff */}
 </React.Fragment>
 ```
+
+Separate files
+Eg: styles/components/button.ts
+```js
+export const DefaultButton = styled.button`
+  background-color: red;
+`;
+
+import { PrimaryButton } from '../../styles/components/button';
+<PrimaryButton type="button">Test</PrimaryButton>
+```
