@@ -88,3 +88,15 @@ sass/
 `– main.scss              # Main Sass file
 ```
 
+## Styled Components
+- Local
+```js
+const PhoneDiv = styled.div`
+  position: relative;
+`;
+
+<PhoneDiv>
+```
+
+- Global
+a bit more complicated
