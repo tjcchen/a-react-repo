@@ -99,4 +99,18 @@ const PhoneDiv = styled.div`
 ```
 
 - Global
-a bit more complicated
+createGlobalStyle
+for CSS resets / base styles
+```js
+import { createGlobalStyle } from 'styled-components';
+cosnt GlobalStyle = createGlobalStyle`
+  body {
+    color: ${props => (props.whiteColor ? 'white' : 'black')};
+  }
+`;
+
+<React.Fragment>
+  <GlobalStyle whiteColor />
+  <Navigation /> {/* example of other top-level stuff */}
+</React.Fragment>
+```
