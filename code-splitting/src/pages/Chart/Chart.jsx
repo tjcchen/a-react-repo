@@ -5,7 +5,7 @@ import styles from "./Chart.module.css";
 export default function Chart() {
   return (
     <>
-      <p class={styles.chart}>Chart</p>
+      <p className={styles.chart}>Chart</p>
       <br />
       <Link to="/dashboard">Go to dashboard</Link>
     </>

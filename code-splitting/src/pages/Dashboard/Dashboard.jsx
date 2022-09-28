@@ -5,7 +5,7 @@ import styles from "./Dashboard.module.css";
 export default function Dashboard() {
   return (
     <>
-      <p class={styles.dashboard}>Dashboard</p>
+      <p className={styles.dashboard}>Dashboard</p>
       <br />
       <Link to="/chart">Go to chart</Link>
     </>
