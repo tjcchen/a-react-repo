@@ -16,3 +16,11 @@ Main chunk.js = Header + Dashboard   and   x.chunk.js = Chart
 
 ## Suspense
 - Fallback UI ( when loading the chunk )
+
+## Analyze your bundle
+- source-map-explorer library
+- `npm i source-map-explorer`
+- package.json
+1) "analyze": "source-map-explorer build/static/js/*.js"
+2) npm run build
+3) npm run analyze
