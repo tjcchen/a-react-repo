@@ -13,3 +13,6 @@ Main chunk.js = Header + Dashboard + Chart
 ||
 <>
 Main chunk.js = Header + Dashboard   and   x.chunk.js = Chart
+
+## Suspense
+- Fallback UI ( when loading the chunk )
